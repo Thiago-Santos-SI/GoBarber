@@ -3,12 +3,7 @@ import appointmentsRouter from "./appontments.routes";
 
 const routes = Router();
 
-routes.use('/appointments', appointmentsRouter)
-
-routes.get('/', (req, res) => {
-    res.send('hello')
-})
-
+routes.use('/appointments', appointmentsRouter);
 
 
 export default routes;
