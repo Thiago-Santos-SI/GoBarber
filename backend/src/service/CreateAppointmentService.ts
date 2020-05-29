@@ -8,7 +8,6 @@ interface RequestDTO {
     date: Date;
 }
 
-
 class CreateAppointmentService {
     public async execute({date,provider}: RequestDTO): Promise<Appointment> {
         const appointmentsRepository = getCustomRepository(AppointmentsRepository);
