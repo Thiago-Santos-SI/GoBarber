@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts"
+    "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,9 @@
   "dependencies": {
     "date-fns": "^2.14.0",
     "express": "^4.17.1",
+    "pg": "^8.2.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.25",
     "uuidv4": "^6.0.9"
   },
   "devDependencies": {
