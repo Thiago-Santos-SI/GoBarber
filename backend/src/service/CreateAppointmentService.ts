@@ -7,7 +7,7 @@ interface RequestDTO {
     provider_id: string;
     date: Date;
 }
-
+    
 class CreateAppointmentService {
     public async execute({date,provider_id}: RequestDTO): Promise<Appointment> {
         const appointmentsRepository = getCustomRepository(AppointmentsRepository);

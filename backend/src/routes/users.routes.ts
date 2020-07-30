@@ -8,7 +8,7 @@ const usersRouter = Router();
  * Analise rules in Service
  */
 
-usersRouter.post('/', async (req, res) =>{
+usersRouter.post('/', async (req, res) => {
     try {
         const {name, email, password} = req.body;
 
@@ -19,6 +19,8 @@ usersRouter.post('/', async (req, res) =>{
             email,
             password,
         });
+
+        delete user.password;
 
         return res.json(user)
 
